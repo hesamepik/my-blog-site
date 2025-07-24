@@ -5,6 +5,7 @@ import { ApolloClient,ApolloProvider,InMemoryCache } from '@apollo/client';
 import App from './App';
 import { ThemeProvider } from '@emotion/react';
 import theme from './mui/theme.js';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -17,9 +18,11 @@ uri:process.env.REACT_APP_URL,
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ApolloProvider client={client}>
+  
     <ThemeProvider theme={theme}>
     <App />
     </ThemeProvider>
+
 </ApolloProvider>
 );
 
