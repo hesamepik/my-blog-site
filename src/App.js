@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer.js';
 import Header from './components/layout/Header.js';
 import Layout from './components/layout/index.js';
 import Author from './components/author/Author.js';
+import Authorespage from "../src/components/author/Authorespage.js"
 
 import Blogepage from "../src/components/blogs/Blogepage.js"
 
@@ -20,7 +21,7 @@ return(
  <Routes>
 <Route path='/' element={<Home/>}></Route>
 <Route path='/blogs/:slug' element={<Blogepage/>}></Route>
-
+<Route path='/authors' element={<Authorespage/>}></Route>
 
  </Routes>
 </Layout>

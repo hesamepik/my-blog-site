@@ -21,7 +21,7 @@ console.log(data,"au")
         <React.Fragment key={author.id}>
           <Grid item xs={12} padding={2}>
             <Link
-              to={`/authors/${author.slug}`}
+              to={"authors"}
               style={{
                 display: "flex",
                 alignItems: "center",
